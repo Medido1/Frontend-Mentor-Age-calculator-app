@@ -206,33 +206,6 @@ function checkValidity() {
   return isValid;
 }
 
-/* function checkValidity() {
-  let isValid = true;
-  inputs.forEach((input) => {
-    if (input.id === 'day' && !checkDayValidity()) {
-      showError(0);
-      showErrorMsg(0);
-      isValid = false;
-    }
-    if (input.id === 'month' && (input.value < 0 || input.value > 12)) {
-      showError(1);
-      showErrorMsg(1);
-      isValid = false;
-    }
-    if (input.id === 'year') {
-      if (parseInt(input.value, 10) < 1 || parseInt(input.value, 10) > currentYear) {
-        showError(2);
-        showErrorMsg(2);
-        isValid = false;
-      }
-      if (parseInt(input.value, 10) === currentYear) {
-        if ()
-      }
-    }
-  });
-  return isValid;
-} */
-
 myForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
